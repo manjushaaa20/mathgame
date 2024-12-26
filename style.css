@@ -1,0 +1,190 @@
+html{
+    height: 100%;
+    background: radial-gradient(circle,  #fff, #ccc);
+}
+#container{
+    height: 420px;
+    width: 550px;
+    background-color: #8fe7c9;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:4px 4px 0  0 #6ac4a6;
+    position: relative;
+   
+
+}
+#score{
+    background-color: rgb(2, 122, 2);
+    color: rgb(243, 235, 235);
+    padding:10px  ;
+    box-shadow:4px 4px 0  0 rgb(46, 150, 46);
+    -webkit-box-shadow:4px 4px 0  0 rgb(46, 150, 46);
+   -moz-box-shadow:4px 4px 0  0 rgb(46, 150, 46);
+
+    width: 65px;
+    position: absolute;
+    left: 450px;
+    
+}
+#correct{
+    position: absolute;
+    left: 250px;
+    background-color: rgb(81, 181, 81);
+    color: white;
+    padding: 10px;
+    display: none;
+
+}
+#wrong{
+    position: absolute;
+    left: 250px;
+    background-color: rgb(181, 60, 60);
+    color: white;
+    padding: 10px;
+    display: none;
+
+}
+#question{
+    width: 450px;
+    height: 150px;
+    background-color: rgb(90, 90, 222);
+    box-shadow:4px 4px 0  0  rgb(58, 58, 139);
+   -webkit-box-shadow:4px 4px 0  0  rgb(58, 58, 139);
+    -moz-box-shadow:4px 4px 0  0  rgb(58, 58, 139);
+    margin:50px auto 10px auto ;
+    font-size: 90px;
+    align-content: center;
+    text-align: center;
+    font-family:  sans-serif;
+    
+
+
+}
+#instruction{
+    background-color: rgb(144, 144, 18);
+    width: 450px;
+    height: 50px;
+    margin:10px  auto ;
+    text-align: center;
+    line-height: 45px;
+    box-shadow:4px 4px 0  0  rgb(120, 120, 26) ;
+   -webkit-box-shadow:4px 4px 0  0  rgb(120, 120, 26) ;
+
+    -moz-box-shadow:4px 4px 0  0  rgb(120, 120, 26) ;
+
+
+
+
+}
+#choices{
+    width: 450px;
+    height: 85px;
+    margin: 5px auto;
+
+}
+.box{
+    cursor: pointer;
+
+    width: 85px;
+    height:85px ;
+    background-color: rgb(214, 155, 83);
+    float: left;
+    margin-right: 36px;
+    border-radius: 5px;
+    border-width: 10px;
+    box-shadow:4px 4px 0  0  rgb(164, 112, 49) ;
+    text-align: center;
+    align-content: center;
+    position: relative;
+   transition: all 0.2s;
+   -webkit-transition: all 0.2s;
+   -moz-transition: all 0.2s;
+   -ms-transition: all 0.2s;
+
+   
+  
+}
+#box4{
+    margin-right: 0;
+    
+}
+.box:hover, #startreset:hover{
+    background-color:rgb(90, 90, 222) ;
+    box-shadow: 4px 4px 0  0  rgb(58, 58, 139);
+    -webkit-box-shadow: 4px 4px 0  0  rgb(58, 58, 139);
+    -moz-box-shadow: 4px 4px 0  0  rgb(58, 58, 139);
+    -ms-box-shadow: 4px 4px 0  0  rgb(58, 58, 139);
+    color: rgb(6, 6, 6);
+
+}
+.box:active, #startreset:active{
+    box-shadow:0px  0px  rgb(58, 58, 139);
+    -webkit-box-shadow:0px  0px  rgb(58, 58, 139);
+    -moz-box-shadow:0px  0px  rgb(58, 58, 139);;
+    -ms-box-shadow:0px  0px  rgb(58, 58, 139);;
+
+    top: 6px;
+
+}
+#startreset{
+    cursor: pointer;
+    padding: 10px; 
+    width: 78px;
+    background-color: rgb(214, 155, 83);
+   
+   margin: 0 auto;;
+    border-radius: 5px;
+    
+    box-shadow:0px 4px 0  0  rgb(164, 112, 49) ;
+   -webkit-box-shadow:0px 4px 0  0  rgb(164, 112, 49) ;
+
+    -moz-box-shadow:0px 4px 0  0  rgb(164, 112, 49) ;
+
+    -ms-box-shadow:0px 4px 0  0  rgb(164, 112, 49) ;
+
+    text-align: center;
+    align-content: center;
+    position: relative;
+   transition: all 0.2s;
+   -webkit-transition: all 0.2s;
+   -moz-transition: all 0.2s;
+   -ms-transition: all 0.2s;
+
+
+}
+#timeremaining{
+ 
+    width: 190px;
+    height: 30px;
+    background-color:darkslategrey ;
+    text-align: center;
+    position: absolute;
+    left: 400px;
+    align-content: center;
+    color:aliceblue;
+    border-radius: 5px;
+    box-shadow:4px 4px rgb(35, 53, 53) ;
+    -webkit-box-shadow:4px 4px rgb(35, 53, 53) ;
+    -moz-box-shadow:4px 4px rgb(35, 53, 53) ;
+    -ms-box-shadow:4px 4px rgb(35, 53, 53) ;
+    /* visibility: hidden; */
+    display: none;
+    
+
+}
+#gameover{
+    height: 200px;
+    width: 500px;
+    font-size: 40px;
+    text-align: center;
+    align-content: baseline;
+background:linear-gradient(rgb(87, 174, 203) , rgb(100, 166, 100)) ;
+position: absolute;
+top:150px ;
+padding: 10px;
+z-index: 2;
+display: none;
+
+    
+}
